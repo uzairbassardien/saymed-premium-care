@@ -19,16 +19,15 @@ export function Hero() {
 
   return (
     <section id="home" ref={ref} className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Background image with gradient overlay */}
+      {/* Background image with subtle dark overlay for text readability */}
       <div className="absolute inset-0 z-0">
         <img src={heroImg} alt="SAYMED healthcare team" className="w-full h-full object-cover" width={1600} height={1200} />
-        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="absolute inset-0 bg-gradient-to-br from-brand/40 via-brand-deep/50 to-transparent" />
+        <div className="absolute inset-0 bg-black/35" />
       </div>
 
       {/* Floating gradient orbs */}
-      <div className="absolute top-32 -left-20 w-72 h-72 rounded-full bg-medical-red/30 blur-3xl animate-float-slow" />
-      <div className="absolute bottom-20 -right-20 w-96 h-96 rounded-full bg-brand/40 blur-3xl animate-float" />
+      <div className="absolute top-32 -left-20 w-72 h-72 rounded-full bg-medical-red/20 blur-3xl animate-float-slow" />
+      <div className="absolute bottom-20 -right-20 w-96 h-96 rounded-full bg-white/10 blur-3xl animate-float" />
 
       {/* Floating medical icons */}
       {[
